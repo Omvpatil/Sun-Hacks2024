@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to Citysaver</title>
+</head>
+<body>
+
+    <div class="register">
+        <div id="image"></div>
+        <h1 class="h1">Register</h1>
+        <form action="/login">
+        <button type="text" name="googleLogin" id="googleLogin">Continue with Google</button> 
+        <div class="list1">
+            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+            <input type="text" name="username" id="username" placeholder="Username">
+            <input type="text" name="password" id="password" placeholder="Password">
+            
+        </div>
+        <div class="list2">   
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+            <input type="text" name="email" id="email" placeholder="Email Address">
+            <input type="text" name="cPassword" id="cPassword" placeholder="Confirm Password">
+        </div> 
+        <button id="sign" onclick="login.html">Sign Up</button>
+        <div class="alAcc">Already hav an account?<a class="alAcc" href="#">Sign In</a></div>
+        </form>
+        
+    </div>
+
+
+    <!-- CSS files -->
+    <style>
+        body{
+            background-color: #1E252B;
+        }
+        .register{
+            background-color: #2D363D;
+            height: 70vh;
+            width: 90%;
+            margin: 15vh 5%;
+            border-radius: 30px;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+        }
+        .register .h1{
+            font-size: 4rem;
+            font-family: "Inter", sans-serif;
+            font-weight: 450;
+            margin: 30vh 10rem;
+            position: absolute;
+            color: #fff;
+        }
+        .list1,
+        .list2{
+            display:flex;
+            flex-direction: column;
+            width: 25rem;
+            margin-top: 10rem;
+            height:25vh;
+        }
+        .list1{
+            margin-left:40rem;
+        }
+        .list2{
+            margin-left:65rem;
+            margin-top:-14.96rem;
+        }
+        #image{
+            height:50rem;
+            background-image: url("logo.png");
+            background-size: 10rem;
+            background-repeat: no-repeat;
+            z-index: 2;
+        }
+        #firstName,
+        #username,
+        #password,
+        #googleLogin,
+        button#sign{
+            background-color: #2D363D;
+            color: #fff;
+            border:1px solid #fff;
+            border-radius: 10px;
+            width:20rem;
+            font-size:1.3rem;
+            margin-left:10rem;
+            margin-top: -10rem;
+            padding: 1rem 1rem 1rem;
+            cursor: pointer;
+            margin: 0.5rem 1rem 1rem;
+        }
+        #lastName,
+        #email,
+        #cPassword{
+            background-color: #2D363D;
+            color: #fff;
+            border:1px solid #fff;
+            border-radius: 10px;
+            font-size:1.3rem;
+            width:20rem;
+            padding: 1rem 1rem 1rem;
+            margin: 0.5rem 1rem 1rem;
+            cursor: pointer;
+        }
+        .alAcc{
+            color: #fff;
+            font-family: "Inter", sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            position: absolute;
+        }
+        div.alAcc{
+            margin-left:54rem;
+            margin-top:10rem;
+        }
+        a.alAcc{
+            margin-left:0.5rem;
+            width:4.21rem;
+        }
+        button#sign{
+            padding: 1rem 2rem 1rem;
+            margin-top: 2rem;
+            margin-left:59rem;
+            height:3.8rem;
+            width:10rem;
+            position: absolute;
+        }
+        button#googleLogin{
+            padding-left:4rem;
+            margin-top: 5rem;
+            position:absolute;
+            margin-left:54rem;
+            width:20rem;
+            height:3.8rem;
+            background-image: url(https://www.freepnglogos.com/uploads/google-logo-png/google-logo-icon-png-transparent-background-osteopathy-16.png);
+            background-size: 3rem;
+            background-position-x:0.5rem;
+            background-position-y:0.35rem;
+            background-repeat: no-repeat;
+        }
+        #firstName::placeholder,
+        #lastName::placeholder,
+        #username::placeholder,
+        #email::placeholder,
+        #cPassword::placeholder,
+        #password::placeholder{
+            color: #fff;
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</body>
+</html>
