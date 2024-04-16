@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citysaver Login</title>
+</head>
+<body>
+
+    <div class="login">
+        <h1 class="h1">Login</h1>
+        <br action="/login">
+            <input type="text" name="username" id="username" placeholder="Username"><br><br>
+            <input type="text" name="password" id="password" placeholder="Password"><br><br><br>
+            <a class="forgot" href="#">Forgot password?</a><br><br><br>
+            <button id="login" onclick="signin.html">Login</button>
+        </form>
+    </div>
+
+
+    <!-- CSS files -->
+    <style>
+        body{
+            background-color: #1E252B;
+        }
+        .login{
+            background-color: #2D363D;
+            height: 70vh;
+            width: 90%;
+            margin: 15vh 5%;
+            border-radius: 30px;
+            position: absolute;
+        }
+        .login .h1{
+            font-size: 4rem;
+            font-family: "Inter", sans-serif;
+            font-weight: 450;
+            margin: 30vh 10rem;
+            position: absolute;
+            color: #fff;
+            
+        }
+        #username,
+        #password,
+        button#login{
+            background-color: #2D363D;
+            color: #fff;
+            border:1px solid #fff;
+            border-radius: 10px;
+            font-size:1.3rem;
+            margin-left:55rem;
+            padding: 1rem 2rem 1rem;
+            cursor: pointer;
+        }
+        a.forgot{
+            margin-left: 60rem;
+            color: #fff;
+            font-family: "Inter", sans-serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        button#login{
+            margin-left:61.3rem;
+        }
+        #username{
+            margin-top:20vh;
+        }
+        #username::placeholder,
+        #password::placeholder{
+            color: #fff;
+            font-family: "Inter", sans-serif;
+        }
+    </style>
+</body>
+</html>
